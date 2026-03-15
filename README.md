@@ -1,21 +1,21 @@
-🏥 Hospital Efficiency Analysis (Power BI + SQL)
+🏥 Hospital Efficiency Performance Dashboard(Power bi + SQL)
 📊 Project Overview
 
-This project analyzes hospital patient data to understand patient admissions, hospital workload, department performance, and treatment patterns.
+This project presents a Hospital Efficiency Performance Dashboard built using Power BI to analyze patient admissions, hospital operations, and healthcare resource utilization.
 
-The analysis was performed using SQL for data exploration and Power BI for interactive dashboard visualization.
+The dashboard helps identify patterns in patient demographics, admission types, department workload, hospital stay duration, and treatment severity to support better decision-making in hospital management.
 
-The goal of this project is to demonstrate data cleaning, data analysis, and data visualization skills in a real-world healthcare dataset.
+🛠 Tools Used
 
-🛠 Tools & Technologies
+Power BI
 
-SQL – Data exploration and analysis
+Power Query (Data Cleaning & Transformation)
 
-Power BI – Interactive dashboard creation
+Data Visualization Techniques
 
-Power Query – Data cleaning and transformation
+Data Analysis
 
-Data Visualization – Business insights generation
+SQL
 
 📁 Dataset Description
 
@@ -24,6 +24,8 @@ The dataset contains hospital patient records including:
 Patient ID
 
 Hospital Code
+
+City Code
 
 Department
 
@@ -41,74 +43,23 @@ Admission Deposit
 
 Length of Stay
 
-City Code
+📈 Key Performance Indicators (KPIs)
+KPI	Value
+Total Patients	314K
+Total Hospitals	32
+Average Admission Deposit	4882
+Average Visitors	3.28
 
-This dataset helps analyze hospital efficiency and patient patterns.
+These KPIs provide a quick overview of hospital activity and patient volume.
 
-🧹 Data Cleaning (Power Query)
-
-The dataset was cleaned using Power Query by:
-
-Removing null values
-
-Fixing incorrect data types
-
-Filtering inconsistent records
-
-Removing duplicates
-
-Standardizing column names
-
-🗄 SQL Data Analysis
-
-SQL queries were used to analyze the dataset before building the dashboard.
-
-Examples of SQL analysis performed:
-
-Total Patients
-SELECT COUNT(patientid) AS total_patients
-FROM train_data;
-Patients by Department
-SELECT department, COUNT(*) AS patient_count
-FROM train_data
-GROUP BY department
-ORDER BY patient_count DESC;
-Average Admission Deposit by Severity
-SELECT severity_of_illness,
-       AVG(admission_deposit) AS avg_deposit
-FROM train_data
-GROUP BY severity_of_illness;
-Top 10 Cities with Most Patients
-SELECT city_code_patient,
-       COUNT(*) AS patient_count
-FROM train_data
-GROUP BY city_code_patient
-ORDER BY patient_count DESC
-LIMIT 10;
-
-These queries helped identify patterns before creating visualizations.
-
-📊 Power BI Dashboard
-
-The interactive dashboard was built in Power BI and contains two pages.
-
+📊 Dashboard Pages
 1️⃣ Hospital Operations Overview
 
-This page provides a high-level summary of hospital operations.
+This page provides a summary of hospital operations and patient admissions.
 
-Key KPIs
+Visualizations Included
 
-Total Patients: 314K
-
-Total Hospitals: 32
-
-Average Admission Deposit: 4882
-
-Average Visitors: 3.28
-
-Visualizations
-
-Admissions by Type
+Patient Admission by Type
 
 Patient Volume by Department
 
@@ -118,83 +69,84 @@ Patient Distribution by City (Top 10)
 
 Patient Distribution by Severity Level
 
-2️⃣ Hospital Patient Insights (Deep Analysis)
+Key Insights
 
-This page provides deeper patient analysis.
+🔹 Trauma admissions are the highest
 
-Visualizations
+Trauma cases dominate hospital admissions compared to emergency and urgent cases.
+
+🔹 Gynecology department handles the highest patient volume
+
+Indicates strong demand for gynecology services.
+
+🔹 Moderate severity cases are the most common
+
+Hospitals treat more moderate conditions compared to extreme cases.
+
+🔹 Patient distribution is concentrated in specific cities
+
+A few cities contribute most of the hospital patients.
+
+2️⃣ Hospital Patient Insights & Deep Analysis
+
+This page provides advanced analysis of patient demographics and hospital performance.
+
+Visualizations Included
 
 Patient Distribution by Age Group
 
 Patients by Hospital
 
-Hospital Stay Duration
-
-Visitors vs Admission Deposit
+Visitors vs Admission Deposit (Scatter Plot)
 
 Average Admission Deposit by Severity
 
-🔎 Key Insights
+Hospital Stay Duration
 
-Trauma admissions represent the largest share of hospital cases.
+📊 Deep Insights
 
-Gynecology department handles the highest patient volume.
+🔹 Age group 31–50 has the highest number of patients
 
-Moderate severity cases dominate hospital admissions.
+Middle-aged individuals visit hospitals most frequently.
 
-Patients aged 31–50 represent the largest patient group.
+🔹 Patient distribution across hospitals is uneven
 
-Admission deposits increase slightly with illness severity.
+Some hospitals treat significantly more patients than others.
 
-Patient demand is concentrated in a few cities.
+🔹 Short hospital stays are the most common
+
+Most treatments are completed within a few days.
+
+🔹 Admission deposit increases slightly with severity
+
+Severe illness typically requires higher treatment costs.
+
+🔹 Higher visitor counts often relate to higher deposits
+
+Complex cases may involve more visitors and higher treatment expenses.
 
 📷 Dashboard Preview
 Overview Dashboard
 
 Deep Analysis Dashboard
 
-📂 Project Structure
-Hospital-Patient-Analysis
-│
-├ dataset
-│   hospital_data.csv
-│
-├ dashboard
-│   hospital_dashboard.pbix
-│
-├ sql
-│   hospital_queries.sql
-│
-├ images
-│   overview_dashboard.png
-│   deep_analysis_dashboard.png
-│
-└ README.md
-📌 Skills Demonstrated
+📌 Key Skills Demonstrated
 
-Data Cleaning
+This project demonstrates skills in:
 
-SQL Data Analysis
+Data Cleaning & Transformation
 
-Power BI Dashboard Design
+Interactive Dashboard Design
 
-Data Visualization
+Healthcare Data Analysis
 
 Business Insight Generation
+
+Data Visualization Best Practices
 
 👨‍💻 Author
 
 Mohammed Ibad
 Aspiring Data Analyst
 
-Skills:
-
-Python
-
-SQL
-
-Excel
-
-Power BI
-
-Data Visualization
+Focused on building data-driven solutions using Python, SQL, Excel, and Power BI.
