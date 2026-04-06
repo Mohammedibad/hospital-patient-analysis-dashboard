@@ -127,8 +127,10 @@ Complex cases may involve more visitors and higher treatment expenses.
 
 📷 Dashboard Preview
 Overview Dashboard
+<img width="1366" height="720" alt="Screenshot 2026-03-12 121543" src="https://github.com/user-attachments/assets/bffe7abc-a354-4fa1-aabb-33955876f9dd" />
 
 Deep Analysis Dashboard
+<img width="1366" height="720" alt="Screenshot 2026-03-12 121557" src="https://github.com/user-attachments/assets/5509c80f-c22b-4c57-ac2a-2047a3fa0c9b" />
 
 📌 Key Skills Demonstrated
 
