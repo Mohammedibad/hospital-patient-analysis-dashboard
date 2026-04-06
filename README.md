@@ -131,7 +131,9 @@ Overview Dashboard
 
 
 Deep Analysis Dashboard
-<img width="1366" height="720" alt="Screenshot 2026-03-12 121543" src="https://github.com/user-attachments/assets/bffe7abc-a354-4fa1-aabb-
+<img width="1366" height="720" alt="Screenshot 2026-03-12 121543" src="https://github.com/user-attachments/assets/4d518243-50ee-4168-8edc-2bb42a92956a" />
+
+
 
 📌 Key Skills Demonstrated
 
